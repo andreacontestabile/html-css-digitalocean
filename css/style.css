@@ -87,6 +87,10 @@ section {
   margin-bottom: 30px;
 }
 
+#cta {
+  background-color: #ddd;
+}
+
 
 @media screen and (max-width: 991px) {
   .wrapper {
