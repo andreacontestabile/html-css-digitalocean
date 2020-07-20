@@ -79,6 +79,14 @@ section {
   background-color: #999;
 }
 
+#regions {
+  background-color: #ddd;
+}
+
+.region_row:first-child {
+  margin-bottom: 30px;
+}
+
 
 @media screen and (max-width: 991px) {
   .wrapper {
