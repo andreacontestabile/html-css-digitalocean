@@ -2,6 +2,11 @@
   background-color: #ddd;
 }
 
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 
 section {
   padding: 40px 0;
@@ -33,12 +38,35 @@ section {
   background-color: #999;
 }
 
-@media screen and (max-width: 768px) {
+.feature {
+  display: inline-block;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 46%;
+  background-color: #999;
+}
+
+.feature:nth-child(odd) {
+  margin-right: 4%;
+}
+
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hero_text {
     margin-bottom: 20px;
   }
 
   .business {
     width: calc((100% - 4px) / 2);
+  }
+
+  .feature {
+    width: 100%;
   }
 }
