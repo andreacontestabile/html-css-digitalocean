@@ -3,3 +3,18 @@
   height: 70px;
   line-height: 70px;
 }
+
+.hero {
+  padding: 50px 0;
+}
+
+.hero_text, .hero_form {
+  height: 400px;
+  background-color: #999;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_text {
+    margin-bottom: 20px;
+  }
+}
