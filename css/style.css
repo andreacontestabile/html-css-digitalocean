@@ -46,7 +46,7 @@ section {
   background-color: #999;
 }
 
-.feature:nth-child(odd) {
+.service:nth-child(odd) {
   margin-right: 4%;
 }
 
@@ -71,6 +71,12 @@ section {
 
 .carousel_nav .circle:first-child {
   background-color: #333;
+}
+
+.feature {
+  height: 250px;
+  width: 100%;
+  background-color: #999;
 }
 
 
@@ -101,5 +107,9 @@ section {
   .carousel_img {
     width: 300px;
     height: 200px;
+  }
+
+  .feature {
+    margin-bottom: 20px;
   }
 }
