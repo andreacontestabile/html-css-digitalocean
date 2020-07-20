@@ -50,10 +50,38 @@ section {
   margin-right: 4%;
 }
 
+#designed {
+  background-color: #ddd;
+}
+
+.carousel_img {
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  background-color: #999;
+}
+
+.carousel_nav .circle {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #999;
+  border-radius: 50%;
+}
+
+.carousel_nav .circle:first-child {
+  background-color: #333;
+}
+
 
 @media screen and (max-width: 991px) {
   .wrapper {
     max-width: 650px;
+  }
+
+  .carousel_img {
+    width: 400px;
+    height: 250px;
   }
 }
 
@@ -68,5 +96,10 @@ section {
 
   .feature {
     width: 100%;
+  }
+
+  .carousel_img {
+    width: 300px;
+    height: 200px;
   }
 }
