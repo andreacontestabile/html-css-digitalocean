@@ -5,7 +5,7 @@ body {
 
 /* Generale */
 .bg_grey {
-  background-color: #ddd;
+  background-color: #F3F5F9;
 }
 
 .wrapper {
@@ -194,11 +194,23 @@ ul {
 
 /* Sezione Businesses */
 
-.business {
-  display: inline-block;
-  height: 50px;
-  width: calc((100% - 20px) / 6);
-  background-color: #999;
+#businesses {
+  padding: 30px 20px;
+}
+
+#businesses h2 {
+  margin-bottom: 50px;
+  color: #6F7B97;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.businesses_list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.businesses_list .business img {
+  height: 100px;
 }
 
 /* Sezione Services */
@@ -264,6 +276,13 @@ ul {
 
 /* RESPONSIVE */
 
+
+@media screen and (max-width: 1199px) {
+  .businesses_list .business img {
+    height: 80px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .wrapper {
     max-width: 650px;
@@ -271,6 +290,10 @@ ul {
 
   .hero_text h1 {
     font-size: 38px;
+  }
+
+  .businesses_list .business img {
+    height: 60px;
   }
 
   .carousel_img {
@@ -285,7 +308,18 @@ ul {
   }
 
   .business {
+    margin-bottom: 20px;
     width: calc((100% - 4px) / 2);
+  }
+
+  .businesses_list li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .businesses_list .business img {
+    height: auto;
+    width: 90%;
+    max-width: 250px;
   }
 
   .service {
