@@ -97,15 +97,98 @@ ul {
   cursor: pointer;
 }
 
+/* Hero */
+
 .hero {
   margin-top: 70px;
-  padding: 50px 0;
+  padding: 55px 0;
+  background-image: url('../img/hero-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.hero_text, .hero_form {
-  height: 400px;
-  background-color: #999;
+.hero h1 {
+  color: #fff;
+  font-size: 64px;
 }
+
+.hero_text p {
+  color: #BBCDFF;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.hero_form {
+  padding: 20px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+
+.hero_form h2 {
+  color: #000;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero_form h2 span {
+  color: #1E7CFF;
+}
+
+.hero_form input {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn_form {
+  display: block;
+  padding: 7px 0;
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.btn_create_account {
+  background-color: #579AFF;
+  color: #fff;
+}
+
+.btn_google_account {
+  position: relative;
+  background-color: #fff;
+  color: #626262;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.btn_google_account::before {
+  position: absolute;
+  left: 10px;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-image: url('../img/google-logo.svg');
+}
+
+.hero_form p {
+  margin-top: 10px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.hero_form p a {
+  color: #1E7CFF;
+}
+
 
 /* MAIN */
 
@@ -184,6 +267,10 @@ ul {
 @media screen and (max-width: 991px) {
   .wrapper {
     max-width: 650px;
+  }
+
+  .hero_text h1 {
+    font-size: 38px;
   }
 
   .carousel_img {
