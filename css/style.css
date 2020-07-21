@@ -8,6 +8,11 @@ body {
   background-color: #F3F5F9;
 }
 
+.bg_gradient_blue {
+  background: rgb(0,71,197);
+  background: linear-gradient(180deg, rgba(0,71,197,1) 0%, rgba(0,30,154,1) 100%);
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
@@ -90,7 +95,7 @@ section h2 + p {
   margin-right: 15px;
 }
 
-.signup_button a {
+.btn_signup a {
   padding: 6px 10px;
   font-size: 15px;
   color: #1E7CFF;
@@ -98,7 +103,7 @@ section h2 + p {
   border-radius: 3px;
 }
 
-.signup_button a:hover {
+.btn_signup a:hover {
   background-color: #1E7CFF;
   color: #fff;
 }
@@ -293,8 +298,6 @@ section h2 + p {
 
 #regions {
   padding: 60px 0 40px;
-  background: rgb(0,71,197);
-  background: linear-gradient(180deg, rgba(0,71,197,1) 0%, rgba(0,30,154,1) 100%);
 }
 
 #regions h2 {
@@ -380,6 +383,24 @@ section h2 + p {
   font-weight: 500;
 }
 
+/* Sezione CTA */
+
+#cta {
+  padding: 60px 0;
+}
+
+#cta h2 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#cta .btn_cta {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #1E7CFF;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 /* FOOTER */
 
