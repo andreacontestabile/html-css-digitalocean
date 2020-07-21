@@ -291,6 +291,43 @@ section h2 + p {
 
 /* Sezione Regions */
 
+#regions {
+  padding: 60px 0 40px;
+  background: rgb(0,71,197);
+  background: linear-gradient(180deg, rgba(0,71,197,1) 0%, rgba(0,30,154,1) 100%);
+}
+
+#regions h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.region {
+  padding: 0 15px;
+}
+
+.region_tagname {
+  margin: 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+.region_location {
+  color: #BBC8E9;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.region a {
+  color: #00D5D2;
+  font-size: 13px;
+}
+
+.region_row .region:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
 .region_row:first-child {
   margin-bottom: 30px;
 }
