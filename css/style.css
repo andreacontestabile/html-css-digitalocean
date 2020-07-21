@@ -264,6 +264,19 @@ section h2 + p {
 }
 
 
+/* Sezione Designed */
+
+#designed h2 + p {
+  margin-bottom: 60px;
+}
+
+#designed .carousel_caption p {
+  margin-top: 20px;
+  color: #031C4E;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* Sezione Features */
 
 .feature {
@@ -293,20 +306,37 @@ section h2 + p {
 .carousel_img {
   margin: 0 auto;
   width: 600px;
-  height: 400px;
-  background-color: #999;
 }
 
 .carousel_nav .circle {
   display: inline-block;
-  height: 10px;
-  width: 10px;
-  background-color: #999;
+  margin-left: 2px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #1E7CFF;
   border-radius: 50%;
 }
 
 .carousel_nav .circle:first-child {
-  background-color: #333;
+  background-color: #1E7CFF;;
+}
+
+.my_carousel::before {
+  margin-right: 10px;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f104";
+  font-size: 48px;
+  font-weight: 900;
+  color: #6F7B97;
+}
+
+.my_carousel::after {
+  margin-left: 10px;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  font-size: 48px;
+  font-weight: 900;
+  color: #031C4E;
 }
 
 
@@ -369,6 +399,10 @@ section h2 + p {
   .carousel_img {
     width: 300px;
     height: 200px;
+  }
+
+  .my_carousel::before, .my_carousel::after {
+    display: none;
   }
 
   .feature {
