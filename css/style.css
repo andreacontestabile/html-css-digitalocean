@@ -248,13 +248,13 @@ section h2 + p {
   width: 49%;
 }
 
-.service h3 {
+.service h3, .feature h3 {
   color: #031C4E;
   font-size: 20px;
   font-weight: 700;
 }
 
-.service p {
+.service p, .feature p {
   color: #606D8C;
   font-size: 16px;
 }
@@ -279,10 +279,14 @@ section h2 + p {
 
 /* Sezione Features */
 
-.feature {
-  height: 250px;
-  width: 100%;
-  background-color: #999;
+#features h2 {
+  margin-bottom: 40px;
+}
+
+.feature a {
+ color: #1E7CFF;
+ font-size: 16px;
+ font-weight: 500;
 }
 
 /* Sezione Regions */
