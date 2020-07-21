@@ -34,6 +34,18 @@ ul {
   list-style: none;
 }
 
+section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #031C4E;
+}
+
+section h2 + p {
+  font-size: 23px;
+  color: #606D8C;
+
+}
+
 .nav_dropdown::after {
   margin-left: 3px;
   font-family: 'Font Awesome 5 Free';
@@ -215,16 +227,40 @@ ul {
 
 /* Sezione Services */
 
+#services h2 + p {
+  margin-bottom: 60px;
+}
+
+.services_list {
+  padding-left: 10px;
+  font-size: 21px;
+  color: #606D8C;
+  border-left: 2px solid #ddd;
+}
+
+.services_list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .service {
-  display: inline-block;
+  float: left;
   margin-bottom: 20px;
-  height: 200px;
-  width: 46%;
-  background-color: #999;
+  width: 49%;
+}
+
+.service h3 {
+  color: #031C4E;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service p {
+  color: #606D8C;
+  font-size: 16px;
 }
 
 .service:nth-child(odd) {
-  margin-right: 4%;
+  margin-right: 2%;
 }
 
 
@@ -320,6 +356,10 @@ ul {
     height: auto;
     width: 90%;
     max-width: 250px;
+  }
+
+  .services_list {
+    margin-bottom: 30px;
   }
 
   .service {
