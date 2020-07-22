@@ -22,8 +22,8 @@ body {
   display: inline-block;
 }
 
-section {
-  padding: 40px 0;
+section, footer {
+  padding: 60px 0;
 }
 
 a {
@@ -253,6 +253,10 @@ section h2 + p {
   width: 49%;
 }
 
+.service_icon {
+  height: 38px;
+}
+
 .service h3, .feature h3 {
   color: #031C4E;
   font-size: 20px;
@@ -385,10 +389,6 @@ section h2 + p {
 
 /* Sezione CTA */
 
-#cta {
-  padding: 60px 0;
-}
-
 #cta h2 {
   margin-bottom: 30px;
   color: #fff;
@@ -402,10 +402,13 @@ section h2 + p {
   font-weight: 500;
 }
 
+#cta .btn_cta:hover {
+  background-color: #CBD4E4;
+}
+
 /* FOOTER */
 
 footer {
-  padding: 60px 0;
   background-color: #031C4E;
 }
 
@@ -437,6 +440,25 @@ footer {
   color: #7A859D;
 }
 
+footer h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer_menu_list .footer_menu_list_item a {
+  color: #A6ADBD;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer_menu_list .footer_menu_list_item a:hover, .footer_copyright .social_link a:hover {
+  color: #fff;
+}
+
+.footer_menu_list .footer_menu_list_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 
 /* CAROUSEL */
 
@@ -459,7 +481,7 @@ footer {
 }
 
 .my_carousel::before {
-  margin-right: 10px;
+  margin-right: 20px;
   font-family: 'Font Awesome 5 Free';
   content: "\f104";
   font-size: 48px;
@@ -468,7 +490,7 @@ footer {
 }
 
 .my_carousel::after {
-  margin-left: 10px;
+  margin-left: 20px;
   font-family: 'Font Awesome 5 Free';
   content: "\f105";
   font-size: 48px;
