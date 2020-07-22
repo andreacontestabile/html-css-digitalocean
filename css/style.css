@@ -1,9 +1,9 @@
+/* Generale */
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-
-/* Generale */
 .bg_grey {
   background-color: #F3F5F9;
 }
@@ -215,11 +215,21 @@ section h2 + p {
   padding: 30px 20px;
 }
 
+#businesses a {
+  color: #1E7CFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 #businesses h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #6F7B97;
   font-size: 16px;
   font-weight: 500;
+}
+
+.businesses_list {
+  margin-bottom: 30px;
 }
 
 .businesses_list li:not(:last-child) {
@@ -239,12 +249,15 @@ section h2 + p {
 .services_list {
   padding-left: 10px;
   font-size: 21px;
-  color: #606D8C;
   border-left: 2px solid #ddd;
 }
 
 .services_list li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.services_list a {
+  color: #606D8C;
 }
 
 .service {
@@ -254,7 +267,7 @@ section h2 + p {
 }
 
 .service_icon {
-  height: 38px;
+  height: 40px;
 }
 
 .service h3, .feature h3 {
@@ -474,6 +487,7 @@ footer h3 {
   width: 12px;
   border: 1px solid #1E7CFF;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .carousel_nav .circle:first-child {
@@ -498,8 +512,84 @@ footer h3 {
   color: #031C4E;
 }
 
+/* Chat Support */
+
+.chat_support {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat_support .chat_avatar {
+  float:right;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-color: #006AFF;
+  background-image: url('../img/sammy-front.png');
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.chat_support .chat_avatar .chat_msg_count {
+  position: absolute;
+  top: -15%;
+  right: -15%;
+  height: 30px;
+  width: 30px;
+  background-color: #FF0001;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 22px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+.chat_support .chat_body {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+  padding: 8px;
+  width: 350px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #031C4E;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.chat_support .chat_body::after, .chat_support .chat_body::before {
+  position: absolute;
+  bottom: 10px;
+  right: -6px;
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.chat_support .chat_body::after {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.chat_support .chat_body::before {
+  z-index: 1;
+}
+
+.chat_support .chat_body .chat_msg {
+  margin: 0;
+}
+
 
 /* RESPONSIVE */
+
+/* Desktop */
 
 
 @media screen and (max-width: 1199px) {
@@ -507,6 +597,8 @@ footer h3 {
     height: 80px;
   }
 }
+
+/* Tablet */
 
 @media screen and (max-width: 991px) {
   .wrapper {
@@ -530,7 +622,32 @@ footer h3 {
     padding: 40px 0;
     height: auto;
   }
+
+  .chat_support {
+    position: fixed;
+    bottom: 60px;
+    left: 40px;
+  }
+
+  .chat_support .chat_avatar {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .chat_support .chat_body {
+    float: none;
+    margin-right: 0;
+  }
+
+  .chat_support .chat_body::after, .chat_support .chat_body::before {
+    top: -6px;
+    left: 25px;
+  }
+
+
 }
+
+/* Mobile */
 
 @media screen and (max-width: 767px) {
   .hero_text {
