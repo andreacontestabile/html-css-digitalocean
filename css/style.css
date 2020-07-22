@@ -22,7 +22,7 @@ body {
   display: inline-block;
 }
 
-section, footer {
+section {
   padding: 40px 0;
 }
 
@@ -404,11 +404,37 @@ section h2 + p {
 
 /* FOOTER */
 
+footer {
+  padding: 60px 0;
+  background-color: #031C4E;
+}
+
+.copyright_text, .copyright_made {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.copyright_text {
+  margin: 10px 0 0;
+  color: #8B94A9;
+}
+
+.copyright_made {
+  color: #5A6887;
+}
+
 .social_link {
   display: inline-block;
   height: 15px;
-  width: 15px;
-  background-color: #999;
+  font-size: 25px;
+}
+
+.social_link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social_link a {
+  color: #7A859D;
 }
 
 
